@@ -3,6 +3,22 @@ package com.thoughtworks;
 public class FizzBuzz {
 
     public String say(int number) {
+        String result = "";
+        if (String.valueOf(number).contains("7")) {
+            if (String.valueOf(number).contains("5")) {
+                if (number % 3 == 0) {
+                    result += "Fizz";
+                }
+                if (number % 7 == 0) {
+                    result += "Whizz";
+                }
+                if (result.equals("")) {
+                    result = String.valueOf(number);
+                }
+                return result;
+            }
+            return contain_3(number);
+        }
         return contain_5(number);
     }
 
