@@ -88,4 +88,5 @@ public class FizzBuzzTest {
         //then
         Assert.assertThat(result,is("BuzzWhizz"));
     }
+
 }
