@@ -1,7 +1,6 @@
 package com.thoughtworks;
 
 import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.core.Is.is;
@@ -36,11 +35,11 @@ public class FizzBuzzTest {
         Assert.assertThat(result,is("Buzz"));
     }
     @Test
-    public void should_return_FizzBuzz_when_given_15(){
+    public void should_return_FizzBuzz_when_given_60(){
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
         //when
-        String result =  fizzBuzz.say(15);
+        String result =  fizzBuzz.say(60);
         //then
         Assert.assertThat(result,is("FizzBuzz"));
     }
@@ -54,12 +53,39 @@ public class FizzBuzzTest {
         Assert.assertThat(result,is("Whizz"));
     }
     @Test
-    public void should_return_FizzBuzzWhizz_when_given_105(){
+    public void should_return_BuzzWhizz_when_given_70(){
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
         //when
-        String result =  fizzBuzz.say(105);
+        String result =  fizzBuzz.say(70);
+        //then
+        Assert.assertThat(result,is("BuzzWhizz"));
+    }
+    @Test
+    public void should_return_FizzBuzzWhizz_when_given_210(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String result =  fizzBuzz.say(210);
         //then
         Assert.assertThat(result,is("FizzBuzzWhizz"));
+    }
+    @Test
+    public void should_return_Fizz_when_given_13(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String result =  fizzBuzz.say(13);
+        //then
+        Assert.assertThat(result,is("Fizz"));
+    }
+    @Test
+    public void should_return_BuzzWhizz_when_given_35(){
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String result =  fizzBuzz.say(35);
+        //then
+        Assert.assertThat(result,is("BuzzWhizz"));
     }
 }
