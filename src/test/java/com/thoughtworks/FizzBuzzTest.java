@@ -106,4 +106,14 @@ public class FizzBuzzTest {
         //then
         Assert.assertThat(result, is("Fizz"));
     }
+
+    @Test
+    public void should_return_Fizz_when_given_753() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        //when
+        String result = fizzBuzz.say(753);
+        //then
+        Assert.assertThat(result, is("Fizz"));
+    }
 }
